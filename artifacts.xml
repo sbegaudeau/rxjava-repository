@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?metadataRepository version='1.1.0'?>
+<repository name='Package Drone Channel: rxjava' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1'>
+  <properties size='1'>
+    <property name='p2.timestamp' value='1456492695974'/>
+  </properties>
+  <mappings size='3'>
+    <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar' />
+    <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}' />
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar' />
+  </mappings>
+  <artifacts size='3'>
+<artifact classifier="org.eclipse.update.feature" id="io.reactivex.rxjava.feature" version="1.1.1">
+  <properties size="5">
+    <property name="download.size" value="298"/>
+    <property name="artifact.size" value="298"/>
+    <property name="download.contentType" value="application/zip"/>
+    <property name="drone.artifact.id" value="2936bee8-9333-4e65-ac2c-ff067a843d0c"/>
+    <property name="download.md5" value="6a428d337de2898547f06d5792d20c23"/>
+  </properties>
+</artifact>
+<artifact classifier="osgi.bundle" id="io.reactivex.rxjava.source" version="1.1.1">
+  <properties size="4">
+    <property name="download.size" value="531207"/>
+    <property name="artifact.size" value="531207"/>
+    <property name="drone.artifact.id" value="b4ef36f0-8b27-449d-9071-ed33960cc1bd"/>
+    <property name="download.md5" value="bbba72b11f39cb073445fbef94d8b503"/>
+  </properties>
+</artifact>
+<artifact classifier="osgi.bundle" id="io.reactivex.rxjava" version="1.1.1">
+  <properties size="4">
+    <property name="download.size" value="1001969"/>
+    <property name="artifact.size" value="1001969"/>
+    <property name="drone.artifact.id" value="e243525f-6257-43f9-9f22-3af22f44eb45"/>
+    <property name="download.md5" value="8b8dd6cd62c43743b23aa768eadb7997"/>
+  </properties>
+</artifact>
+  </artifacts>
+</repository>

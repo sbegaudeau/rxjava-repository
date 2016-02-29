@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?metadataRepository version='1.1.0'?>
+<repository name='Package Drone Channel: rxjava' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1'>
+  <properties size='1'>
+    <property name='p2.timestamp' value='1456492695974'/>
+  </properties>
+  <units size='5'>
+<unit id="io.reactivex.rxjava.source" singleton="false" version="1.1.1">
+  <update id="io.reactivex.rxjava.source" range="[0.0.0,1.1.1)" severity="0"/>
+  <properties size="2">
+    <property name="org.eclipse.equinox.p2.name" value="Source bundle for 'io.reactivex.rxjava'"/>
+    <property name="org.eclipse.equinox.p2.provider" value="ReactiveX"/>
+  </properties>
+  <provides size="3">
+    <provided name="io.reactivex.rxjava.source" namespace="org.eclipse.equinox.p2.iu" version="1.1.1"/>
+    <provided name="bundle" namespace="org.eclipse.equinox.p2.eclipse.type" version="1.0.0"/>
+    <provided name="io.reactivex.rxjava.source" namespace="osgi.bundle" version="1.1.1"/>
+  </provides>
+  <requires size="0"/>
+  <artifacts size="1">
+    <artifact classifier="osgi.bundle" id="io.reactivex.rxjava.source" version="1.1.1"/>
+  </artifacts>
+  <touchpoint id="org.eclipse.equinox.p2.osgi" version="1.0.0"/>
+  <touchpointData size="1">
+    <instructions size="1">
+      <instruction key="manifest">Manifest-Version: 1.0
+Bundle-SymbolicName: io.reactivex.rxjava.source
+Bundle-Version: 1.1.1
+
+</instruction>
+    </instructions>
+  </touchpointData>
+  <licenses size="0"/>
+</unit>
+<unit id="io.reactivex.rxjava" singleton="false" version="1.1.1">
+  <update id="io.reactivex.rxjava" range="[0.0.0,1.1.1)" severity="0"/>
+  <properties size="2">
+    <property name="org.eclipse.equinox.p2.name" value="rxjava"/>
+    <property name="org.eclipse.equinox.p2.provider" value="ReactiveX"/>
+  </properties>
+  <provides size="20">
+    <provided name="bundle" namespace="org.eclipse.equinox.p2.eclipse.type" version="1.0.0"/>
+    <provided name="rx.observers" namespace="java.package" version="1.1.1"/>
+    <provided name="rx.schedulers" namespace="java.package" version="1.1.1"/>
+    <provided name="rx.subjects" namespace="java.package" version="1.1.1"/>
+    <provided name="rx.singles" namespace="java.package" version="1.1.1"/>
+    <provided name="rx.annotations" namespace="java.package" version="1.1.1"/>
+    <provided name="rx.internal.operators" namespace="java.package" version="1.1.1"/>
+    <provided name="rx" namespace="java.package" version="1.1.1"/>
+    <provided name="rx.internal.util" namespace="java.package" version="1.1.1"/>
+    <provided name="rx.internal.producers" namespace="java.package" version="1.1.1"/>
+    <provided name="rx.internal.util.unsafe" namespace="java.package" version="1.1.1"/>
+    <provided name="rx.plugins" namespace="java.package" version="1.1.1"/>
+    <provided name="rx.internal.schedulers" namespace="java.package" version="1.1.1"/>
+    <provided name="rx.observables" namespace="java.package" version="1.1.1"/>
+    <provided name="io.reactivex.rxjava" namespace="osgi.bundle" version="1.1.1"/>
+    <provided name="io.reactivex.rxjava" namespace="org.eclipse.equinox.p2.iu" version="1.1.1"/>
+    <provided name="rx.functions" namespace="java.package" version="1.1.1"/>
+    <provided name="rx.internal.util.atomic" namespace="java.package" version="1.1.1"/>
+    <provided name="rx.subscriptions" namespace="java.package" version="1.1.1"/>
+    <provided name="rx.exceptions" namespace="java.package" version="1.1.1"/>
+  </provides>
+  <requires size="1">
+    <required name="sun.misc" namespace="java.package" range="0.0.0"/>
+  </requires>
+  <artifacts size="1">
+    <artifact classifier="osgi.bundle" id="io.reactivex.rxjava" version="1.1.1"/>
+  </artifacts>
+  <touchpoint id="org.eclipse.equinox.p2.osgi" version="1.0.0"/>
+  <touchpointData size="1">
+    <instructions size="1">
+      <instruction key="manifest">Manifest-Version: 1.0
+Bundle-SymbolicName: io.reactivex.rxjava
+Bundle-Version: 1.1.1
+
+</instruction>
+    </instructions>
+  </touchpointData>
+  <licenses size="0"/>
+</unit>
+<unit id="io.reactivex.rxjava.feature.feature.group" singleton="false" version="1.1.1">
+  <update id="io.reactivex.rxjava.feature.feature.group" range="[0.0.0,1.1.1)" severity="0"/>
+  <properties size="4">
+    <property name="org.eclipse.equinox.p2.description" value=""/>
+    <property name="org.eclipse.equinox.p2.type.group" value="true"/>
+    <property name="org.eclipse.equinox.p2.name" value="RxJava"/>
+    <property name="org.eclipse.equinox.p2.provider" value="Netflix"/>
+  </properties>
+  <provides size="1">
+    <provided name="io.reactivex.rxjava.feature.feature.group" namespace="org.eclipse.equinox.p2.iu" version="1.1.1"/>
+  </provides>
+  <requires size="3">
+    <required name="io.reactivex.rxjava.source" namespace="org.eclipse.equinox.p2.iu" range="[1.1.1,1.1.1]"/>
+    <required name="io.reactivex.rxjava" namespace="org.eclipse.equinox.p2.iu" range="[1.1.1,1.1.1]"/>
+    <required name="io.reactivex.rxjava.feature.feature.jar" namespace="org.eclipse.equinox.p2.iu" range="[1.1.1,1.1.1]">
+      <filter>(org.eclipse.update.install.features=true)</filter>
+    </required>
+  </requires>
+  <touchpoint id="null" version="0.0.0"/>
+  <licenses size="1">
+    <license/>
+  </licenses>
+</unit>
+<unit id="io.reactivex.rxjava.feature.feature.jar" singleton="false" version="1.1.1">
+  <update id="io.reactivex.rxjava.feature.feature.jar" range="[0.0.0,1.1.1)" severity="0"/>
+  <properties size="3">
+    <property name="org.eclipse.equinox.p2.description" value=""/>
+    <property name="org.eclipse.equinox.p2.name" value="RxJava"/>
+    <property name="org.eclipse.equinox.p2.provider" value="Netflix"/>
+  </properties>
+  <provides size="3">
+    <provided name="feature" namespace="org.eclipse.equinox.p2.eclipse.type" version="1.0.0"/>
+    <provided name="io.reactivex.rxjava.feature.feature.jar" namespace="org.eclipse.equinox.p2.iu" version="1.1.1"/>
+    <provided name="io.reactivex.rxjava.feature" namespace="org.eclipse.update.feature" version="1.1.1"/>
+  </provides>
+  <requires size="0"/>
+  <filter>(org.eclipse.update.install.features=true)</filter>
+  <artifacts size="1">
+    <artifact classifier="org.eclipse.update.feature" id="io.reactivex.rxjava.feature" version="1.1.1"/>
+  </artifacts>
+  <touchpoint id="org.eclipse.equinox.p2.osgi" version="1.0.0"/>
+  <touchpointData size="1">
+    <instructions size="1">
+      <instruction key="zipped">true</instruction>
+    </instructions>
+  </touchpointData>
+  <licenses size="1">
+    <license/>
+  </licenses>
+</unit>
+<unit id="io.reactivex.rxjava" version="0.0.0.0--1531dbaac26">
+    <properties size="2">
+      <property name="org.eclipse.equinox.p2.name" value="RxJava"/>
+      <property name="org.eclipse.equinox.p2.type.category" value="true"/>
+    </properties>
+    <provides size="1">
+      <provided name="io.reactivex.rxjava" namespace="org.eclipse.equinox.p2.iu" version="0.0.0.0--1531dbaac26"/>
+    </provides>
+    <requires size="1">
+      <required name="io.reactivex.rxjava.feature.feature.group" namespace="org.eclipse.equinox.p2.iu" range="[1.1.1,1.1.1]"/>
+    </requires>
+    <touchpoint id="null" version="0.0.0"/>
+  </unit>
+  </units>
+</repository>
